@@ -1,0 +1,7 @@
+###
+POST localhost:8080/api/v0/messages/send
+Content-Type: application/json
+
+{
+  "message": "Hello Rabbit!"
+}

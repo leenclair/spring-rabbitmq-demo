@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Slf4j
-@Component
+//@Component
 @RequiredArgsConstructor
 public class OrderConsumer {
 

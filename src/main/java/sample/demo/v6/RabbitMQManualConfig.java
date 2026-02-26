@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @EnableRabbit // RabbitMQ 관련 어노테이션 활성화, RabbitListener 설정 커스텀
-@Configuration
+//@Configuration
 public class RabbitMQManualConfig {
 
     @Bean

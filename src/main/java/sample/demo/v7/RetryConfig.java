@@ -8,7 +8,7 @@ import org.springframework.core.retry.*;
 import java.time.Duration;
 
 @Slf4j
-@Configuration
+//@Configuration
 public class RetryConfig {
 
     @Bean

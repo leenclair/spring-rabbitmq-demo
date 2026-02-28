@@ -6,7 +6,7 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Component;
 
 @Slf4j
-@Component
+//@Component
 public class OrderDeadLetterRetry {
 
     private final RabbitTemplate rabbitTemplate;
@@ -15,7 +15,7 @@ public class OrderDeadLetterRetry {
         this.rabbitTemplate = rabbitTemplate;
     }
 
-    @RabbitListener(queues = RabbitMQConfig.DLQ)
+//    @RabbitListener(queues = RabbitMQConfig.DLQ)
     public void processDeadLetter(String message) {
         log.info("[DLQ] Received message: {}", message);
 

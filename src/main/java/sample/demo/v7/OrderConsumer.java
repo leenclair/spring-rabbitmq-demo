@@ -9,14 +9,14 @@ import org.springframework.core.retry.RetryTemplate;
 import org.springframework.stereotype.Component;
 
 @Slf4j
-@Component
+//@Component
 @RequiredArgsConstructor
 public class OrderConsumer {
 
     private final RabbitTemplate rabbitTemplate;
     private final RetryTemplate retryTemplate;
 
-    @RabbitListener(queues = RabbitMQConfig.ORDER_COMPLETED_QUEUE)
+//    @RabbitListener(queues = RabbitMQConfig.ORDER_COMPLETED_QUEUE)
     public void consume(String message) {
         try {
             retryTemplate.execute(() -> {

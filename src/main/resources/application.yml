@@ -4,3 +4,11 @@ spring:
     port: 5672
     username: guestuser
     password: guestuser
+    listener:
+      simple:
+        retry:
+          enabled: true # 재시도 활성화
+          max-retries: 3 # 최대 재시도 횟수
+          initial-interval: 1000 # 초기 재시도 간격 (밀리초) 1초
+          max-interval: 10000 # 최대 재시도 간격 (밀리초) 10초
+        default-requeue-rejected: false # 재시도 후에도 메시지를 다시 큐에 넣지 않도록 설정

@@ -5,7 +5,7 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 @Slf4j
-@Component
+//@Component
 public class OrderConsumer {
 
     private int retryCount = 0;
